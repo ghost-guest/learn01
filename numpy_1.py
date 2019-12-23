@@ -34,3 +34,35 @@ h = np.random.random((3, 3))
 print(h)
 i = np.random.randint(1, 9, size=(3, 3))
 print(i)
+
+#基本属性
+# ndim 数组轴的个数
+a = np.random.randint(1, 9, size=(3, 3))
+print(a.ndim)
+
+# 数组的维度
+print(a.shape)
+# 数组的元素类型
+print(a.dtype)
+# 数组元素的大小
+print(a.itemsize)
+# 数组的大小
+print(a.size)
+# astype 修改元素的类型
+b = a.astype(float)
+print(b.dtype)
+# 修改数组形状shape
+c = np.random.randint(1, 9, size=(2, 5))
+print(c)
+c.shape = (5, 2)
+print(c)
+c.shape = (-1, 5)
+print(c)
+arr = np.arange(9)
+print(arr)
+# 改变形状 reshape
+arr2 = arr.reshape(3, 3)
+print(arr2)
+arr2[0][1] = 100
+print(arr2)
+
