@@ -19,7 +19,7 @@ import os
 # print(fns)
 
 
-# 获取某个目录下的所有的execl的文件的路径，包括多层目录
+# 获取某个目录下的所有的execl的文件的路径，包括层级目录
 f_list = []
 for root, dirs, files in os.walk('/Users/mac/Desktop/python'):
     for file in files:
